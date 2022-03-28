@@ -213,3 +213,5 @@ return [
         ],
     ],
 ];
+
+return $comic;

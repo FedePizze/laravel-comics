@@ -1,4 +1,3 @@
-h
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +7,13 @@ h
     <title>footer</title>
 </head>
 <body>
-<div>
-    <div id="list">
+
+<div class="footer">
+    <div id="list" style="background:url({{asset('img/footer-bg.1b706117.jpg')}});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;">
+
       <div class="container">
 
         <div id="leftBox">
@@ -73,7 +77,7 @@ h
 
 
 
-        <div id="rightBox">
+        <div id="rightBox" style="background:url({{asset('public/img/dc-logo-bg.597503ad.png')}})">
 
         </div>
 
@@ -95,11 +99,11 @@ h
       <div id="socialBox">
         <h3 id="socialText">FOLLOW US</h3>
         <a href=""><img class="socialImg" src="{{asset('img/footer-facebook.png')}}" alt=""></a>
-        <!-- <a href=""><img class="socialImg" src="../assets/img/footer-twitter.png" alt=""></a>
-        <a href=""><img class="socialImg" src="../assets/img/footer-youtube.png" alt=""></a>
-        <a href=""><img class="socialImg" src="../assets/img/footer-pinterest.png" alt=""></a>
-        <a href=""><img class="socialImg" src="../assets/img/footer-periscope.png" alt=""></a> -->
-      </div>
+        <a href=""><img class="socialImg" src="{{asset('img/footer-twitter.png')}}" alt=""></a>
+        <a href=""><img class="socialImg" src="{{asset('img/footer-youtube.png')}}" alt=""></a>
+        <a href=""><img class="socialImg" src="{{asset('img/footer-pinterest.png')}}" alt=""></a>
+        <a href=""><img class="socialImg" src="{{asset('img/footer-peeriscope.png')}}" alt=""></a>
+    </div>
 
 </div>
 

@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('pageTitle')</title>
 
-    <link rel="stylesheet" href="{{asset('')}}">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
 </head>
 <body>
 
     @include('partials.header')
     @include('partials.jumbotron')
+
+    <main>
+        @yield('content')
+    </main>
 
 
     @include('partials.footer')
