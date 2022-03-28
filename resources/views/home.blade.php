@@ -14,12 +14,12 @@
 
         <div class="container" id="load2">
             @foreach ($fumetti as $elemento)
-                <div class="comics">
+                <a href="/superman" class="comics">
 
                     <img class="imgCard" src="{{$elemento['thumb']}}" :alt="{{$elemento['thumb']}}">
                     <h6>{{$elemento['title']}}</h6>
 
-                </div>
+                </a>
             @endforeach
         </div>
 

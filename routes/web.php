@@ -19,3 +19,19 @@ Route::get('/', function () {
 
     return view('home', ['fumetti' => $comic]);
 });
+
+Route::get('superman', function () {
+
+    $comic = config('comics');
+
+    $superman = [];
+
+    foreach($comic as $item) {
+        if($item['title'] == "Action Comics #1000: The Deluxe Edition") {
+            $superman = $item;
+        }
+    }
+
+    return view('superman', ['superman' => $superman]);
+});
+
