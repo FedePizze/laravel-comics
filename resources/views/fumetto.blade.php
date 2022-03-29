@@ -64,7 +64,7 @@
                 </div>
                 <div class="line"></div>
             </div>
-            
+
             <div class="rightGrey">
                 <h3>Specs</h3>
                 <div class="line"></div>
@@ -87,6 +87,32 @@
                 <div class="line"></div>
             </div>
         </div>
+
+        <div class="line outline"></div>
+
+        <div class="infoBox">
+            <div class="iconsBox">
+                <h5>DIGITAL COMICS</h5>
+                <div class="icon1"></div>
+            </div>
+
+            <div class="iconsBox">
+                <h5>SHOP DC</h5>
+                <div class="icon2"></div>
+            </div>
+
+            <div class="iconsBox">
+                <h5>COMIC SHOP LOCATOR</h5>
+                <div class="icon3"></div>
+            </div>
+
+            <div class="iconsBox">
+                <h5>SUBSRIPTIONS</h5>
+                <div class="icon4"></div>
+            </div>
+        </div>
+
+
 
     </div>
 
