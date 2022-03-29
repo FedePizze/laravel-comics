@@ -9,8 +9,8 @@
     <div class="stripe">
 
         <div class="containerComic" id="load">
-            <div class="lable1">{{$fumetto['type']}}</div>
-            <div class="lable2">VIEW GALLER</div>
+            <div class="label1">{{$fumetto['type']}}</div>
+            <div class="label2">VIEW GALLER</div>
             <img class="imgComic" src="{{$fumetto['thumb']}}" :alt="{{$fumetto['title']}}">
         </div>
 
@@ -24,13 +24,17 @@
                     <h4>U.S. Price:&nbsp<p>{{$fumetto['price']}}</p></h4>
                     <h4>AVAILABLE</h4>
                 </div>
-                <div class="rightGreen"></div>
+                <div class="middleGreen"></div>
+                <div class="rightGreen">
+                    <h4>Check Availability</h4>
+                </div>
             </div>
-            <p>{{$fumetto['description']}}</p>
+            <p class="description">{{$fumetto['description']}}</p>
         </div>
 
         <div class="rightInfo">
-
+            <h4>ADVERTISMENT</h4>
+            <img src="{{asset('img/aaddvv.jpg')}}" alt="">
         </div>
     </div>
 

@@ -1,9 +1,6 @@
 @import './_colors.scss';
 
-.containerComic{
-    width: 60%;
-    margin: 0 auto;
-}
+
 
 .stripe{
     background-color: $DcColor-active;
@@ -11,11 +8,39 @@
     height: 70px;
     position: relative;
 
-    .imgComic{
-        width: 130px;
-        position: absolute;
-        top: -150px;
+    .containerComic{
+        width: 60%;
+        margin: 0 auto;
+
+        .imgComic{
+            width: 130px;
+            position: absolute;
+            top: -150px;
+            z-index: 1;
+        }
+
+        [class*='label'] {
+            position: absolute;
+            z-index: 2;
+            text-transform: uppercase;
+            color: white;
+            background-color: #00a1cf;
+            font-size: 12px;
+            padding: 4px;
+            border: 1px solid white;
+        }
+
+        .label1{
+            top: -150px;
+        }
+
+        .label2{
+            width: 130px;
+            bottom: -17px;
+            text-align: center;
+        }
     }
+
 }
 
 .infoBox{
@@ -23,6 +48,7 @@
     margin: 0 auto;
     position: relative;
     padding: 60px 0px;
+    display: flex;
 
     .leftInfo{
         width: 70%;
@@ -33,16 +59,22 @@
             text-transform: uppercase;
         }
 
+        .description{
+            font-size: 15px;
+            line-height: 25px;
+        }
+
         .greenBox{
             display: flex;
             background-color: #54b958;
-            padding: 10px 15px;
+            margin-bottom: 20px;
 
             .leftGreen{
                 width: 70%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                padding: 10px 15px;
 
                 h4{
                     display: flex;
@@ -54,11 +86,18 @@
                 }
             }
 
+            .middleGreen {
+                width: 1.5px;
+                background-color: black;
+            }
+
             .rightGreen{
-                width: 30%;
+                width: 29%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                color: white;
+                padding: 10px 15px;
             }
         }
 
@@ -66,7 +105,20 @@
 
     .rightInfo{
         width: 30%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+
+        h4{
+            color: gray;
+        }
+
+        img{
+            width: 250px;
+        }
     }
+
 
 
 }

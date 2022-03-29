@@ -228,11 +228,6 @@ h6 {
   margin-top: 10px;
 }
 
-.containerComic {
-  width: 60%;
-  margin: 0 auto;
-}
-
 .stripe {
   background-color: #0c7cec;
   width: 100%;
@@ -240,10 +235,37 @@ h6 {
   position: relative;
 }
 
-.stripe .imgComic {
+.stripe .containerComic {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.stripe .containerComic .imgComic {
   width: 130px;
   position: absolute;
   top: -150px;
+  z-index: 1;
+}
+
+.stripe .containerComic [class*=label] {
+  position: absolute;
+  z-index: 2;
+  text-transform: uppercase;
+  color: white;
+  background-color: #00a1cf;
+  font-size: 12px;
+  padding: 4px;
+  border: 1px solid white;
+}
+
+.stripe .containerComic .label1 {
+  top: -150px;
+}
+
+.stripe .containerComic .label2 {
+  width: 130px;
+  bottom: -17px;
+  text-align: center;
 }
 
 .infoBox {
@@ -251,6 +273,7 @@ h6 {
   margin: 0 auto;
   position: relative;
   padding: 60px 0px;
+  display: flex;
 }
 
 .infoBox .leftInfo {
@@ -263,10 +286,15 @@ h6 {
   text-transform: uppercase;
 }
 
+.infoBox .leftInfo .description {
+  font-size: 15px;
+  line-height: 25px;
+}
+
 .infoBox .leftInfo .greenBox {
   display: flex;
   background-color: #54b958;
-  padding: 10px 15px;
+  margin-bottom: 20px;
 }
 
 .infoBox .leftInfo .greenBox .leftGreen {
@@ -274,6 +302,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 15px;
 }
 
 .infoBox .leftInfo .greenBox .leftGreen h4 {
@@ -285,14 +314,33 @@ h6 {
   color: white;
 }
 
+.infoBox .leftInfo .greenBox .middleGreen {
+  width: 1.5px;
+  background-color: black;
+}
+
 .infoBox .leftInfo .greenBox .rightGreen {
-  width: 30%;
+  width: 29%;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  padding: 10px 15px;
 }
 
 .infoBox .rightInfo {
   width: 30%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.infoBox .rightInfo h4 {
+  color: gray;
+}
+
+.infoBox .rightInfo img {
+  width: 250px;
 }
 
