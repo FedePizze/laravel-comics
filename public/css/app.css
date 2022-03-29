@@ -58,6 +58,7 @@
 }
 
 .footer #list {
+  background-image: url("/img/footer-bg.1b706117.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -260,5 +261,38 @@ h6 {
   color: black;
   padding-bottom: 20px;
   text-transform: uppercase;
+}
+
+.infoBox .leftInfo .greenBox {
+  display: flex;
+  background-color: #54b958;
+  padding: 10px 15px;
+}
+
+.infoBox .leftInfo .greenBox .leftGreen {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infoBox .leftInfo .greenBox .leftGreen h4 {
+  display: flex;
+  color: #a4f489;
+}
+
+.infoBox .leftInfo .greenBox .leftGreen h4 p {
+  color: white;
+}
+
+.infoBox .leftInfo .greenBox .rightGreen {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoBox .rightInfo {
+  width: 30%;
 }
 

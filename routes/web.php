@@ -20,18 +20,16 @@ Route::get('/', function () {
     return view('home', ['fumetti' => $comic]);
 });
 
-Route::get('superman', function () {
+Route::get('/fumetti/{fumetti_id}', function ($fumetti_id) {
 
     $comic = config('comics');
 
-    $superman = [];
-
-    foreach($comic as $item) {
-        if($item['title'] == "Action Comics #1000: The Deluxe Edition") {
-            $superman = $item;
-        }
+    if (is_numeric($fumetti_id) && $fumetti_id >= 0 && $fumetti_id < count($comic)) {
+        $fumetto = $comic[$fumetti_id];
+        return view('fumetto', ['fumetto' => $fumetto]);
+    } else {
+        abort(404, 'Error');
     }
-
-    return view('superman', ['superman' => $superman]);
-});
+    
+})->name('fumetti');
 

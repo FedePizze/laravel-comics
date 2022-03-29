@@ -9,10 +9,7 @@
 <body>
 
 <div class="footer">
-    <div id="list" style="background:url({{asset('img/footer-bg.1b706117.jpg')}});
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;">
+    <div id="list">
 
       <div class="container">
 
