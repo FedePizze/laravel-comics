@@ -18,9 +18,9 @@ Route::get('/', function () {
     $comic = config('comics');
 
     return view('home', ['fumetti' => $comic]);
-});
+})->name('home');
 
-Route::get('/fumetti/{fumetti_id}', function ($fumetti_id) {
+Route::get('fumetti/{fumetti_id}', function ($fumetti_id) {
 
     $comic = config('comics');
 
@@ -30,6 +30,6 @@ Route::get('/fumetti/{fumetti_id}', function ($fumetti_id) {
     } else {
         abort(404, 'Error');
     }
-    
+
 })->name('fumetti');
 

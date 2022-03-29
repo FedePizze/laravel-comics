@@ -23,10 +23,20 @@
   font-size: 12px;
   font-weight: 700;
   padding: 50px 0px;
-  border-bottom: 5px solid $DcColor-none;
   text-align: center;
+  text-decoration: none;
 
   &:hover, &:active{
     border-bottom: 5px solid $DcColor-active;
+    color: $DcColor-active;
   }
+}
+
+.attiva{
+    border-bottom: 5px solid rgba(12, 124, 236, 1);
+    color: rgba(12, 124, 236, 1);
+}
+
+.disattiva{
+    border-bottom: 5px solid rgba(12, 124, 236, 0);
 }

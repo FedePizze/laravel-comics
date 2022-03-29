@@ -38,6 +38,58 @@
         </div>
     </div>
 
+    <div class="greyBox">
+
+        <div class="infoBox">
+            <div class="leftGrey">
+                <h3>Talent</h3>
+                <div class="line"></div>
+                <div class="infoData">
+                    <h5>Art by:</h5>
+                    <div class="names">
+                        @foreach ($fumetto['artists'] as $item)
+                            <p>{{$item}},&nbsp</p>
+                        @endforeach
+                    </div>
+                </div>
+
+                <div class="line"></div>
+                <div class="infoData">
+                    <h5>Written by:</h5>
+                    <div class="names">
+                        @foreach ($fumetto['writers'] as $item)
+                            <p>{{$item}},&nbsp</p>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="line"></div>
+            </div>
+            
+            <div class="rightGrey">
+                <h3>Specs</h3>
+                <div class="line"></div>
+                <div class="infoData">
+                    <h5>Series:</h5>
+                    <div class="names"><p class="series">{{$fumetto['series']}}</p></div>
+                </div>
+
+                <div class="line"></div>
+                <div class="infoData">
+                    <h5>U.S. Price:</h5>
+                    <div class="names"><p class="blackData">{{$fumetto['price']}}</p></div>
+                </div>
+
+                <div class="line"></div>
+                <div class="infoData">
+                    <h5>On Sale Date:</h5>
+                    <div class="names"><p class="blackData">{{$fumetto['sale_date']}}</p></div>
+                </div>
+                <div class="line"></div>
+            </div>
+        </div>
+
+    </div>
+
 
 </div>
 
